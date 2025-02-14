@@ -1,0 +1,54 @@
+
+<div class="container">
+    <div class="form-container">
+        <h2>Please fill in the form</h2>
+        <p>Let us know how we can help you. Fill in your details, and we’ll get back to you as soon as possible.</p>
+
+        <form [formGroup]="contacForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Insert" formControlName="name">
+                <div ngIf="contacForm.controls['name']?.invalid && contacForm.controls['name'].touched" class="error">
+                    Name is required.
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Insert" formControlName="email">
+                <div ngIf="inputForm.controls['email']?.invalid && inputForm.controls['email'].touched" class="error">
+                    Valid email is required.
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Contact reason</label>
+                <select id="subject" formControlName="subject">
+                    <option value="">Select</option>
+                    <option value="support">Support</option>
+                    <option value="sales">Sales</option>
+                    <option value="other">Other</option>
+                </select>
+                <div ngIf="inputForm.controls['subject']?.invalid && inputForm.controls['subject'].touched" class="error">
+                    Subject is required.
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Insert" formControlName="message"></textarea>
+                <div ngIf="inputForm.controls['message']?.invalid && inputForm.controls['message'].touched" class="error">
+                    Message is required.
+                </div>
+            </div>
+
+            <button type="submit" class="btn" [disabled]="contacForm.invalid">Send ▶</button>
+        </form>
+    </div>
+
+    <div class="image-container">
+        <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-mecanografia_114360-363.jpg?t=st=1739547113~exp=1739550713~hmac=000e04e89c4affe0fa7ac299c32bcf1c728fef969610c8fd05b0b0ec9230b137&w=740" 
+            alt="Contact illustration">
+    </div>
+</div>
+

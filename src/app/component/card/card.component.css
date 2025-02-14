@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rye&display=swap');
+
+/* Contenedor principal */
+.container {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+}
+
+/* Ícono en la esquina superior izquierda */
+.icon-file {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    color: #3c3c3c;
+    font-family: 'Geist';
+    font-weight: 600;
+}
+
+/* Botón en la esquina superior derecha */
+.butonToday {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 30px;
+    border: none;
+    color: #3c3c3c;
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Contenedor de tarjetas en una fila */
+.card-container {
+    display: flex; /* Organiza las tarjetas en una fila */
+    flex-wrap: nowrap; /* Evita que las tarjetas se vayan a una nueva línea */
+    gap: 10px; /* Espacio entre tarjetas */
+    margin-top: 50px; /* Separación del título */
+    overflow-x: auto; /* Permite desplazamiento horizontal si no caben */
+    padding-bottom: 10px;
+}
+
+/* Oculta la barra de desplazamiento en navegadores modernos */
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Tarjeta individual */
+.card {
+    width: 290px; /* Mínimo tamaño de la tarjeta */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    padding: 10px;
+}
+
+/* Contenedor de la imagen */
+.image-container {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Imagen dentro de la tarjeta */
+.card-image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Etiqueta "Technology" sobre la imagen */
+.image-technology {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 123, 255, 0.8);
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+/* Contenido de la tarjeta */
+.card-content {
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+.card-title{
+    font-size: 1.5rem;
+}
+
+/* Botón de lectura */
+.readmore {
+    color: #3c3c3c;
+    background-color: #4BE196;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 1024px) {
+    .card-container
+        {
+        flex-wrap: nowrap; /* Asegura que siempre se mantengan en una fila */
+        overflow-x: auto; /* Permite desplazamiento en pantallas pequeñas */
+    }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .image-technology {
+      font-size: 0.5rem; /* Smaller font size on small screens */
+      top: 5px; /* Adjust position if needed */
+      right: 5px; /* Adjust position if needed */
+    }
+
+    .card-title {
+      font-size: 1rem; /* Smaller font size on small screens */
+    }
+
+    .card-description {
+      font-size: 0.8rem; /* Smaller font size on small screens */
+    }
+
+    /* You might also need to adjust padding or margins on the card or its content */
+    .card {
+      padding: 5px; /* Example */
+    }
+
+    .card-content {
+      padding: 5px; /* Example */
+    }
+}
+
+  /* Media query for even smaller screens (optional) */
+  @media (max-width: 480px) { /* Adjust breakpoint as needed */
+    .image-technology {
+      font-size: 0.3rem; /* Even smaller font size */
+      top: 2px; /* Adjust position if needed */
+      right: 2px; /* Adjust position if needed */
+    }
+
+    .card-title {
+      font-size: 0.9rem; /* Even smaller font size */
+    }
+
+    .card-description {
+      font-size: 0.7rem; /* Even smaller font size */
+    }
+}

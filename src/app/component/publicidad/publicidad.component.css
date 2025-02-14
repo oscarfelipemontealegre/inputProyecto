@@ -1,0 +1,44 @@
+.banner {
+    display: flex; /* Habilita Flexbox en el banner */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100px; /* Altura mínima del banner (ajusta según necesites) */
+    top: 20px;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    max-width: 90%; /* Ajusta según necesites */
+    
+}
+
+.logo {
+    display: flex; /* Para centrar el icono y la imagen del logo */
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre el logo y las marcas */
+    top: 20px;
+}
+
+.logo img {
+    /* Estilos para la imagen del logo */
+    margin-left: 10px; /* Espacio entre el icono y la imagen */
+    max-width: 150px; /* Ancho máximo del logo */
+}
+
+.partner-brands {
+    display: flex; /* Para centrar las marcas horizontalmente */
+    justify-content: center; /* Centra las marcas horizontalmente */
+}
+
+.brand-logos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las marcas se ajusten a varias líneas */
+    justify-content: center; /* Centra las marcas horizontalmente */
+}
+
+.brand-logos img {
+    max-width: 150px; /* Ancho máximo de los logos de las marcas */
+    margin: 10px; /* Espacio entre los logos */
+}

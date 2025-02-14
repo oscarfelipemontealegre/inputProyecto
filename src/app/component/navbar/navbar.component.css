@@ -1,0 +1,133 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+/* Estilos generales de la barra de navegación */
+.navbar {
+  background-color: #e6e5e5; /* Color de fondo */
+  padding: 8px; /* Ajusta el padding según tu diseño */
+
+}
+
+/* Estilos para la marca (logo o texto) */
+.navbar-brand {
+  color: #3c3c3c; /* Color del texto de la marca */
+  font-family: sans-serif; /* Elige una fuente adecuada */
+  font-weight: bold; /* Peso de la fuente (opcional) */
+  font-size: 1.2rem; /* Tamaño de la fuente (opcional) */
+}
+
+/* Estilos para los elementos de navegación (links) */
+.navbar-nav .nav-link {
+  color: #3c3c3c; /* Color del texto de los links */
+  margin-right: 9px; /* Espacio entre los links */
+  font-family: sans-serif; /* Elige una fuente adecuada */
+  font-size: 0.8rem; /* Tamaño de la fuente (opcional) */
+}
+
+/* Estilos para el botón de idioma */
+.btn-outline-secondary.idioma {
+  border-radius: 30px; /* Bordes redondeados */
+  font-family: sans-serif; /* Elige una fuente adecuada */
+}
+
+/* Estilos para el modo oscuro */
+.dark-theme {
+  background-color: #222 !important; /* Fondo general oscuro */
+  color: white !important; /* Texto en blanco para contraste */
+}
+
+.dark-theme .navbar {
+  background-color: #333 !important; /* Fondo de la barra de navegación oscuro */
+}
+
+.dark-theme .navbar-brand,
+.dark-theme .nav-link {
+  color: white !important; /* Texto de la barra de navegación en blanco */
+}
+
+/* Estilos para el switch personalizado */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.slider i {
+  color: white;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #4caf50; /* Verde cuando está activado */
+}
+
+input:checked + .slider i {
+  transform: translateX(20px);
+}
+
+/* Estilos para los botones de Login y Contacto */
+.login,
+.contact {
+  color: #3c3c3c; /* Color de texto */
+  border: none; /* Elimina bordes predeterminados */
+  padding: 8px 16px; /* Ajusta el padding según tu diseño */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor al pasar por encima */
+  transition: background-color 0.3s; /* Transición suave de fondo */
+  font-family: sans-serif; /* Elige una fuente adecuada */
+}
+
+.login {
+  background-color: #e6e5e5; /* Gris claro para Login */
+}
+
+.contact {
+  background-color: #4caf50; /* Verde para Contacto */
+}
+
+.login:hover {
+  background-color: #d0d0d0; /* Gris más oscuro al pasar el ratón */
+}
+
+.contact:hover {
+  background-color: #43a047; /* Verde más oscuro al pasar el ratón */
+}
+
+/* Estilos para el dropdown de idioma */
+.dropdown-toggle.idioma {
+  font-family: sans-serif; /* Elige una fuente adecuada */
+}
+
+.navbar-collapse .navbar-nav .nav-link { /* Estilos para los links dentro del collapse */
+  color: #3c3c3c; /* Color del texto */
+  
+}
+
+.navbar-collapse .navbar-nav .nav-link:hover { /* Estilos para el hover */
+  color: #007bff; /* Ejemplo: Azul al pasar el ratón */
+  
+}

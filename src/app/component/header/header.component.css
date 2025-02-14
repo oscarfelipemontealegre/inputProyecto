@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rye&display=swap');
+
+/* Estilos generales */
+header {
+    width: 100%;
+    padding: 0px;
+    position: relative; /* Para el posicionamiento absoluto del contenido */
+    
+}
+
+  /* Estilos para la imagen */
+.header-image {
+    position: relative; /* Para el posicionamiento absoluto del contenido */
+    overflow: hidden;
+}
+
+.header-image img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    max-height: 500px; /* Altura máxima de la imagen */
+}
+
+  /* Estilos para el contenido */
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Ocupa todo el ancho de la imagen */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+}
+
+  .header-content .container { /* Estilos para el contenedor del grid */
+    padding: 0; /* Elimina el padding predeterminado del contenedor de Bootstrap */
+}
+
+  /* Estilos para el texto */
+.header-content h1 {
+    font-size: 3em; /* Tamaño del título */
+    margin-bottom: 10px;
+    font-family:'Geist';
+    font-weight: 700;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-family:'Geist';
+    font-weight: 20;
+}
+
+  .smart-automation { /* Estilos para "Smart Automation" */
+    color: #4BE196; /* Color verde */
+    /* Otros estilos que desees */
+}
+
+  /* Estilos para el botón */
+.header-content button {
+    background-color: #4BE196;
+    color: #3c3c3c;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+  /* Media queries para hacerlo responsive */
+  @media (max-width: 767px) { /* Pantallas pequeñas */
+    .header-content h1 {
+    font-size: 2em;
+    }
+    .header-content p {
+    font-size: 1em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) { /* Pantallas medianas */
+    .header-content h1 {
+    font-size: 2.5em;
+    }
+    .header-content p {
+    font-size: 1.1em;
+    }
+}
+
+@media (min-width: 992px) { /* Pantallas grandes */
+    .header-content h1 {
+    font-size: 3em;
+    }
+    .header-content p {
+    font-size: 1.2em;
+    }
+}
+
+.texto {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family: 'Geist', sans-serif;
+  font-weight: bold;
+  max-width: 530px;
+  margin: 0 auto;
+  text-align: center;
+  color: #f0f0f0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .texto {
+    font-size: 1rem;
+  }
+}
+

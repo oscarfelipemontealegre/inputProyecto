@@ -1,0 +1,37 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f8f9fa; /* Color de fondo opcional */
+}
+
+.footer > div {
+    flex: 1;
+    min-width: 180px; /* Para que los elementos no se agrupen demasiado en pantallas pequeñas */
+    padding: 10px;
+}
+
+/* Asegurar que los iconos y contacto también estén alineados horizontalmente */
+.footer .contact-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre los iconos */
+}
+
+.footer .contact-icons i {
+    font-size: 24px;
+    color: #007bff; /* Color de los iconos */
+}
+
+
+.bi{
+    margin-bottom: 9ppx;
+    padding: 9px;
+
+}
+
+.bg-green-200 {
+    background-color: #c6f6d5; /* Verde claro */
+}

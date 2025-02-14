@@ -1,0 +1,73 @@
+<nav class="navbar navbar-expand-lg" [ngClass]="{'dark-theme': isDarkMode}">
+    <div class="container-fluid">
+        <img src={{navabrUrl}} alt="logo Greenhouse" class="navbar-brand"> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link home" aria-current="page" href="#">
+                        <i class="bi bi-house-fill"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-shield-fill-x"></i> Solutions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-people-fill"></i> About us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="bi bi-box-seam"></i> Our products
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Soil sensors</a></li>
+                        <li><a class="dropdown-item" href="#">Climate sensors</a></li>
+                        <li><a class="dropdown-item" href="#">IoT sensors</a></li>
+                        <li><a class="dropdown-item" href="#">Water sensors</a></li>
+                        <li><a class="dropdown-item" href="#">Hardware</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link knowledge-hub" href="#"> <i class="bi bi-file-earmark-text-fill"></i> Knowledge
+                        hub <i class="bi bi-chevron-compact-down"></i>
+                    </a>
+                </li>
+            </ul>
+
+
+
+            <div class="dropdown mx-2">
+                <button class="btn btn-outline-secondary idioma dropdown-toggle" type="button"
+                    data-bs-toggle="dropdown">
+                    <i class="bi bi-translate"></i> EN
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">🇺🇸 English</a></li>
+                    <li><a class="dropdown-item" href="#">🇪🇸 Español</a></li>
+                    <li><a class="dropdown-item" href="#">🇩🇪 Deutsch</a></li>
+                    <li><a class="dropdown-item" href="#">🇳🇱 Nederlands</a></li>
+                </ul>
+            </div>
+
+            <label class="switch mx-2">
+                <input type="checkbox" (change)="toggleTheme()" [checked]="isDarkMode">
+                <span class="slider">
+                    <i class="bi" [ngClass]="isDarkMode ? 'bi-sun-fill' : 'bi-moon-fill'"></i>
+                </span>
+            </label>
+
+            <div class="d-flex">
+                <button type="button" [routerLink]="'input'" routerLinkActive="active" class="btn btn-outline login me-2">
+                    <i class="bi bi-person"></i> Login
+                </button>
+                <button type="button" class="btn btn-outline contact">Contact us</button>
+            </div>
+
+
+        </div>
+    </div>
+</nav>
+

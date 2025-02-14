@@ -1,0 +1,129 @@
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Alinea el texto a la izquierda dentro de la imagen */
+.card-text-overlay {
+    position: absolute;
+    top: 0; /* Pegado al borde superior */
+    left: 0; /* Pegado al borde izquierdo */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea el contenido arriba */
+    align-items: flex-start; /* Alinea a la izquierda */
+    color: white;
+    padding: 10px; /* Agrega padding de 10px */
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/*  Ajusta el ancho máximo del contenido */
+.overlay-content {
+    width: 100%;
+    max-width: 600px;
+}
+
+/*  Ajusta el texto dentro de la imagen */
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.card-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+/*  Ajusta el botón */
+.boton {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Asegura que el botón ocupe todo el ancho si es necesario */
+.boton a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Media Query para Tablets (menores a 768px) */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card-text-overlay {
+        padding: 8px; /* Reduce el padding */
+    }
+
+    .card-title {
+        font-size: 18px; /* Reduce el tamaño */
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .boton {
+        width: 60%;
+        padding: 1p5x;
+        font-size: 10px;
+    }
+}
+
+/* Media Query para Celulares (menores a 480px) */
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card-text-overlay {
+        padding: 6px; /* Menos padding */
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .boton {
+        width: 100%;
+        padding: 8px;
+        font-size: 10px;
+    }
+}
