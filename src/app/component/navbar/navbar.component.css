@@ -131,3 +131,19 @@ input:checked + .slider i {
   color: #007bff; /* Ejemplo: Azul al pasar el ratón */
   
 }
+
+#google_translate_element {
+  display: inline-block;
+}
+
+.goog-te-gadget {
+  font-size: 14px !important;
+  font-family: Arial, sans-serif;
+}
+
+.goog-te-gadget select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+}

@@ -39,18 +39,7 @@
 
 
 
-            <div class="dropdown mx-2">
-                <button class="btn btn-outline-secondary idioma dropdown-toggle" type="button"
-                    data-bs-toggle="dropdown">
-                    <i class="bi bi-translate"></i> EN
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">🇺🇸 English</a></li>
-                    <li><a class="dropdown-item" href="#">🇪🇸 Español</a></li>
-                    <li><a class="dropdown-item" href="#">🇩🇪 Deutsch</a></li>
-                    <li><a class="dropdown-item" href="#">🇳🇱 Nederlands</a></li>
-                </ul>
-            </div>
+            <div id="google_translate_element" class="mx-2"></div>
 
             <label class="switch mx-2">
                 <input type="checkbox" (change)="toggleTheme()" [checked]="isDarkMode">
